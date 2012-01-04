@@ -1,0 +1,9 @@
+Inspired by Discover.com's Discovernator[1], The Whatevernator[2] is a jQuery[3] plugin
+written for the purpose of making it easy for anyone to add the same functionality to
+their website.
+
+View the files in the src directory to see how to put it all together.
+
+1. http://news.discovery.com/games-quizzes/discovernator-crazy-amazing-facts-101411.html
+2. http://whatevernator.com
+3. http://jquery.com
