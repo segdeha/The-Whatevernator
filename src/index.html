@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "☮">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>The Whatevernator</title>
+        <meta name="keywords" content="quotes, jokes, facts, whatever">
+        <link rel="stylesheet" type="text/css" href="whatevernator.css">
+        <style type="text/css">
+
+        /* page-specific styles */
+        body {
+            background-color: black;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#963), to(black)); /* Saf4+, Chrome */
+            background-image: -webkit-linear-gradient(top, #963, black); /* Chrome 10+, Saf5.1+, iOS 5+ */
+            background-image:    -moz-linear-gradient(top, #963, black); /* FF3.6 */
+            background-image:     -ms-linear-gradient(top, #963, black); /* IE10 */
+            background-image:      -o-linear-gradient(top, #963, black); /* Opera 11.10+ */
+            background-image:         linear-gradient(top, #963, black);
+            background-repeat: no-repeat;
+            color: white;
+            font: 16px/1.5 Helvetica, Sans-Serif;
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        h1 {
+            /* Playball is defined in whatevernator.css */
+            font-family: Playball, cursive;
+            font-size: 64px;
+            font-weight: normal;
+            line-height: 1;
+            margin: 0;
+            padding: 40px 0 20px 0;
+            text-shadow: rgba(0,0,0,0.75) 0 4px 8px;
+        }
+        p {
+            font: 10px/1 Verdana, Sans-Serif;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+            a:hover {
+                text-decoration: underline;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h1>The Whatevernator</h1>
+
+            <!-- BEGIN: WHATEVERNATOR HTML -->
+            <div id="whatevernator">
+                <div class="whatevernator_top"></div>
+                <div class="whatevernator_middle">
+                    <ol>
+                        <!-- PUT YOUR QUOTES, FACTS, JOKES, WHATEVER HERE -->
+                        <li><p>&#8220;All television is children&#8217;s television.&#8221;<br>~Richard P. Adler</p></li>
+                        <li><p>&#8220;Things are only impossible until they&#8217;re not.&#8221;<br>~Jean-Luc Picard</p></li>
+                        <li><p>&#8220;Government is too big and too important<br>to be left to the politicians.&#8221;<br>~Chester Bowles</p></li>
+                        <li><p>&#8220;Poets have been mysteriously silent<br>on the subject of cheese.&#8221;<br>~G.K. Chesterton</p></li>
+                        <li><p>&#8220;There is no greater mistake than the hasty conclusion that opinions are worthless<br>because they are badly argued.&#8221;<br>~Thomas H. Huxley</p></li>
+                        <li><p>&#8220;Don&#8217;t wear your heart on your sleeve<br>when your remarks are off the cuff.&#8221;<br>~Elvis Costello</p></li>
+                        <li><p>&#8220;Any fool can criticize, condemn and complain<br>and most fools do.&#8221;<br>~Benjamin Franklin</p></li>
+                        <li><p>&#8220;How do you govern a country which has 246 different kinds of cheese?&#8221;<br>~Charles De Gaulle</p></li>
+                        <li><p>&#8220;One man scorned and covered with scars<br>still strove with his last ounce of courage<br>to reach the unreachable stars;<br>and the world will be better for this.&#8221;<br>~Joe Darion</p></li>
+                        <li><p>&#8220;The pessimist complains about the wind;<br>the optimist expects it to change;<br>the realist adjusts the sails.&#8221;<br>~William Arthur Ward</p></li>
+                    </ol>
+                </div>
+                <div class="whatevernator_bottom"></div>
+                <div class="whatevernator_button">
+                    <a href="#">More, Please!</a>
+                </div>
+            </div>
+            <!-- END: WHATEVERNATOR HTML -->
+
+            <p>Inspired by <a href="http://news.discovery.com/games-quizzes/discovernator-crazy-amazing-facts-101411.html">The Discovernator</a></p>
+            <p>Implemented by <a href="http://andrew.hedges.name/">Andrew Hedges</a>.</p>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="jquery.whatevernator.js"></script>
+        <script type="text/javascript">
+
+        /*
+
+        The Whatevernator takes 2 parameters: selector and duration.
+        The 1st parameter is the CSS selector for the containing element.
+        The 2nd parameter is the animation duration. Calling it with no parameters
+        is the same as calling: $.whatevernator('#whatevernator', 1000)
+
+        */
+        $.whatevernator();
+
+        /*
+
+        Another way to use the script is to assign the return value of $.whatevernator()
+        to a variable and call the next() method directly, like so:
+
+        var w = $.whatevernator();
+        w.next();
+
+        So, e.g., you could set it up to change on an interval:
+
+        var w = $.whatevernator();
+        setInterval(function () {
+            w.next();
+        }, 5000); // change every 5 seconds
+
+        If you choose to do this, you probably want to remove the HTML for the button
+        so your users don't get confused. Comment out or delete the following from the
+        HTML:
+
+        <div class="whatevernator_button">
+            <a href="#">More, Please!</a>
+        </div>
+
+        */
+
+        </script>
+
+    </body>
+</html>

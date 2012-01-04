@@ -1,0 +1,146 @@
+/**
+ * Whatevernator -- a complete rip-off off the Discovernator (http://news.discovery.com/games-quizzes/discovernator-crazy-amazing-facts-101411.html)
+ * @author Andrew Hedges <andrew@hedges.name>
+ * @created 2011-12-22
+ */
+
+/* same as linking to: http://fonts.googleapis.com/css?family=Playball */
+@font-face {
+  font-family: 'Playball';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Playball'), local('Playball-Regular'), url('http://themes.googleusercontent.com/static/fonts/playball/v1/QS5qjU-Gc2sqWEq5kDfWQXYhjbSpvc47ee6xR_80Hnw.woff') format('woff');
+}
+
+#whatevernator {
+    color: #333;
+    margin: 1em auto;
+    width: 640px;
+}
+    #whatevernator div {
+        background: white;
+        width: auto;
+    }
+    #whatevernator a {
+        -moz-transition: opacity 0.25s;
+        -webkit-transition: opacity 0.25s;
+        -ms-transition: opacity 0.25s;
+        -o-transition: opacity 0.25s;
+        transition: opacity 0.25s;
+    }
+    #whatevernator .whatevernator_top {
+        height: 20px;
+        -webkit-border-top-left-radius: 20px;
+        -webkit-border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    #whatevernator .whatevernator_middle {
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+    }
+        #whatevernator .whatevernator_middle:before,
+        #whatevernator .whatevernator_middle:after {
+            background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFhJREFUeNpi/A8EDFQEjEDz3lPbwBvUNJAFiJ9S28BH1DbwIbUNfDCovQyKZXVqGyhAbQMZBr2BwtQ2UIfayUaB2gYqUdtA5UHtQlCkXKa2gW+oaSBAgAEAe04q+yfncTkAAAAASUVORK5CYII=) repeat-x;
+            content: ' ';
+            height: 10px;
+            left: 0;
+            position: absolute;
+            right: 0;
+            z-index: 9999;
+        }
+        #whatevernator .whatevernator_middle:before {
+            background-position-y: top;
+            top: 0;
+        }
+        #whatevernator .whatevernator_middle:after {
+            background-position-y: bottom;
+            bottom: 0;
+        }
+    #whatevernator .whatevernator_bottom {
+        height: 20px;
+        margin-bottom: 47px;
+        overflow: visible;
+        position: relative;
+        -webkit-border-bottom-left-radius: 20px;
+        -webkit-border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+        #whatevernator .whatevernator_bottom:after {
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAAvCAYAAACyoNkAAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAnJJREFUeNrc2V9EZFEcB/BTohq1/Vul1Za2ekh/loqtJUV/tGlFRJToKSKi1+gplqWnoaeI2KchYhgihoiIIcoQERGxdomITL+ffsMYd+aec++5955fP74ZM3PP+HTOPffccwtSqZSQrBLIk+BZgwUK0ArIP4ZI7JzKQoUDSpn25jHkWQUaYgqN4B8VaBlD5AvkUBX6gSH0CPJXFVrBELqffqECrWKG/A85cAKtYQbdzbzuq0A/MpuEdjLfUIHWMoLiTHvtFFrHCLqV/YYKtJ4JMgo5dwP9xOTc3LD6QBbaCGlgct1MuIE2MUA+5upNFWgzAygi79xCvxiOxOEazvcFWWiLwchnyCJNRK6hrQZDNyEXdl+S2UrBFdEVpNpA5Alk2K43ZXu03VDkA2RWBikL7TB0YTAHuZc9gCt0Vbxtegmd0C7DkOHsWzAdUFwodBuExB29NScH2kF7hDl7RbjRNS87+TiBmlB4Pk7T4kB4Ae0zBDklXD73yQdtMwAa0YG0g/YHvFD4RQsCLU/wivJ8NhDgIn0Zsqez0VzQcsj3AJD4+GAGEtfdcK6hOwj56jPynOaEuBeN54IO+Yz8TSPoxqsfsBq6IR+hCFvyqhftenQE8s2Hu49tWl7G/fiPWvXoqMe/GYOsQy79PDeyoZ8hYx791iUBY0Fcs7KH7gTtKOgsvDleoWEaCNKqR39obDtB5+Efp3ccXkHHIZMa2owS8FgYVJnQn5Bih+1cU89hksLASkN76X5Ppe4IhncYZ8LwSkNnaMbNV/gQ54SCw/JUMCqEdhLU6nKQzIAlBOPCnfoFWsTjovqWlmVJ8c7qVYABABiqcMcR45eJAAAAAElFTkSuQmCC) center bottom no-repeat;
+            bottom: -47px;
+            content: ' ';
+            height: 47px;
+            left: 310px;
+            position: absolute;
+            width: 58px;
+        }
+    #whatevernator .whatevernator_button {
+        background: transparent;
+    }
+        #whatevernator .whatevernator_button a {
+            background: #009;
+            color: white;
+            display: inline-block;
+            font-family: Playball, cursive;
+            font-size: 36px;
+            margin-top: 6px;
+            padding: 6px 16px;
+            text-decoration: none;
+            text-shadow:black 0 -1px 1px;
+            -webkit-border-radius: 20px;
+            border-radius: 20px;
+        }
+            #whatevernator .whatevernator_button a:hover {
+                background-color: rgba(0,0,255,0.5);
+                background-image: -webkit-gradient(linear, left top, left bottom, from(blue), to(#006)); /* Saf4+, Chrome */
+                background-image: -webkit-linear-gradient(top, blue, #006); /* Chrome 10+, Saf5.1+, iOS 5+ */
+                background-image:    -moz-linear-gradient(top, blue, #006); /* FF3.6 */
+                background-image:     -ms-linear-gradient(top, blue, #006); /* IE10 */
+                background-image:      -o-linear-gradient(top, blue, #006); /* Opera 11.10+ */
+                background-image:         linear-gradient(top, blue, #006);
+                background-repeat: no-repeat;
+            }
+            #whatevernator .whatevernator_button a:active {
+                background: #006;
+            }
+    #whatevernator ol {
+        display: table;
+        left: 0;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+    }
+        #whatevernator ol li {
+            display: table-row;
+            height: 200px; /* must match the height of #whatevernator .whatevernator_middle */
+            position: relative;
+        }
+            #whatevernator ol li p {
+                display: table-cell;
+                font: 24px/1.25 Helvetica, Sans-Serif;
+                height: 160px;
+                margin: 0;
+                overflow: hidden;
+                padding: 20px 40px;
+                position: relative;
+                text-shadow:rgba(0,0,0,0.25) 0 1px 2px;
+                vertical-align: middle;
+            }
+                #whatevernator ol li p a {
+                    color: #ccc;
+                    display: inline-block;
+                    font-size: 0.825em;
+                    margin-right: -1em;
+                    opacity: 0;
+                    padding-left: 0.5em;
+                    text-decoration: none;
+                    vertical-align: top;
+                }
+                    #whatevernator ol li p:hover a {
+                        opacity: 1;
+                    }
